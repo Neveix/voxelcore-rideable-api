@@ -1,5 +1,7 @@
 # RideableAPI
 
+A content pack for [VoxelCore](https://github.com/MihailRis/voxelcore)
+
 A lightweight, event-driven API for mounting and unmounting players on entities or seats.  
 Designed for single-player content packs, with planned multiplayer support.
 
@@ -34,6 +36,10 @@ If you are a content pack developer and want to use this API in your project, pl
 
 - [🇺🇸English API Documentation](./docs/en/api.md)
 - [🇷🇺Русская документация](./docs/ru/api.md)
+
+New to content pack development? Check out the step-by-step tutorial:
+- [English Tutorial](./docs/en/tutorial.md)
+- [Русский туториал](./docs/ru/tutorial.md)
 
 ## Contributing
 

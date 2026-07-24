@@ -183,12 +183,11 @@ end
 You should see your player teleport above the vehicle and will be pinned there.
 Right-click again to unmount and drop back to the ground.
 
-## Step 6: Next Steps
+## Next Steps
 Now that you have a working vehicle, you can add:
 
 - Custom models and textures
 - Sound effects for mounting/unmounting
-- Vehicle physics (using VehicleAPI)
 - Speed and steering controls
 - Multi-seat support
 - Inventory access (crouch + interact)
@@ -196,4 +195,4 @@ Now that you have a working vehicle, you can add:
 
 Now that you understand the basics, you can explore the complete API reference:
 
-- **[API Reference (English)](./api.md)**
+- **[API Reference](./api.md)**

@@ -1,0 +1,8 @@
+{
+  "id": "rideable_api",
+  "title": "Rideable API",
+  "version": "0.1.0",
+  "creator": "Neveix",
+  "description": "Allows players to sit on or ride any entity. Required for vehicle/furniture mods",
+  "dependencies": []
+}

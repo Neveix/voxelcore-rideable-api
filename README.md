@@ -34,12 +34,12 @@ If a content pack requires RideableAPI, it will tell you. Simply install it and 
 
 If you are a content pack developer and want to use this API in your project, please refer to the full documentation:
 
-- [🇺🇸English API Documentation](./docs/en/api.md)
-- [🇷🇺Русская документация](./docs/ru/api.md)
+- [🇺🇸 API Documentation](./docs/en/api.md)
+- [🇷🇺 Документация API](./docs/ru/api.md)
 
 New to content pack development? Check out the step-by-step tutorial:
-- [English Tutorial](./docs/en/tutorial.md)
-- [Русский туториал](./docs/ru/tutorial.md)
+- [🇺🇸 Tutorial](./docs/en/tutorial.md)
+- [🇷🇺 Туториал](./docs/ru/tutorial.md)
 
 ## Contributing
 

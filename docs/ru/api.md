@@ -42,9 +42,9 @@ local rideable_api = require("rideable_api:mount")
 | Имя | Тип | Описание |
 | :--- | :--- | :--- |
 | `pid` | `integer` | ID игрока |
-| `entity_uid` | `integer|nil` | UID сущности (опционально, для справки) |
-| `seat_id` | `any|nil` | Идентификатор сиденья (опционально, для поддержки нескольких мест) |
-| `on_unmount` | `function|nil` | Коллбэк, вызываемый при высадке: `fun(pid, entity_uid, seat_id)` |
+| `entity_uid` | `integer or nil` | UID сущности (опционально, для справки) |
+| `seat_id` | `any or nil` | Идентификатор сиденья (опционально, для поддержки нескольких мест) |
+| `on_unmount` | `function or nil` | Коллбэк, вызываемый при высадке: `fun(pid, entity_uid, seat_id)` |
 
 **Возвращает:** `boolean` — `true` в случае успеха, `false` в противном случае.
 

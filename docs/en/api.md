@@ -41,9 +41,9 @@ Mounts a player on an entity or seat.
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `pid` | `integer` | Player ID |
-| `entity_uid` | `integer|nil` | Entity UID (optional, for reference) |
-| `seat_id` | `any|nil` | Seat identifier (optional, for multi-seat support) |
-| `on_unmount` | `function|nil` | Callback called on unmount: `fun(pid, entity_uid, seat_id)` |
+| `entity_uid` | `integer or nil` | Entity UID (optional, for reference) |
+| `seat_id` | `any or nil` | Seat identifier (optional, for multi-seat support) |
+| `on_unmount` | `function or nil` | Callback called on unmount: `fun(pid, entity_uid, seat_id)` |
 
 **Returns:** `boolean` - `true` on success, `false` otherwise.
 

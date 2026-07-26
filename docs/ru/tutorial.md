@@ -167,9 +167,7 @@ local function player_unmount()
 end
 
 function on_despawn()
-	if rider_id then
-		rideable_api.unmount(rider_id)
-	end
+	player_unmount()
 end
 
 local function player_mount(pid)

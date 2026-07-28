@@ -1,7 +1,6 @@
----@diagnostic disable: missing-fields
 ---@type rideable_api
+---@diagnostic disable-next-line
 local M = {}
----@diagnostic enable: missing-fields
 
 -- [pid] = { entity_uid, seat_id, unmount_callback }
 local mounts = {}

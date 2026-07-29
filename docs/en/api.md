@@ -23,7 +23,7 @@ To use RideableAPI in your content pack:
 
 ```lua
 ---@type rideable_api
-local rideable_api = require("rideable_api:mount")
+local rideable_api = require("rideable_api:api/v1/mount")
 ```
 
 
@@ -121,6 +121,6 @@ The API emits the following events via the `events` library:
 
 ```lua
 events.on("rideable_api:on_mount", function(pid, entity_uid, seat_id)
-    print("Player " .. pid .. " mounted on " .. entity_uid)
+    console.chat("Player " .. pid .. " mounted on " .. entity_uid)
 end)
 ```

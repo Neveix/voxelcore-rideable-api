@@ -99,7 +99,7 @@ end
 Let's verify everything works before adding more features.
 
 1. Launch VoxelCore with your content pack loaded.
-2. Open the console by pressing the "`" (backtick) key.
+2. Open the console by pressing the "`" key.
 3. Type `entity.spawn rideable_tutorial:vehicle ~ ~ ~`
 
 This should spawn an invisible 1x1x1 cube entity (it has no model yet, but it exists).
@@ -182,14 +182,6 @@ You should see your player teleport above the vehicle and will be pinned there.
 Right-click again to unmount and drop back to the ground.
 
 ## Next Steps
-Now that you have a working vehicle, you can add:
-
-- Custom models and textures
-- Sound effects for mounting/unmounting
-- Speed and steering controls
-- Multi-seat support
-- Inventory access (crouch + interact)
-
 
 Now that you understand the basics, you can explore the complete API reference:
 

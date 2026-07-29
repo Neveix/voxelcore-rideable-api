@@ -7,7 +7,8 @@ This document describes how to use RideableAPI in your content pack.
 
 ## Overview
 
-RideableAPI provides a simple registry for mounting and unmounting players on entities or seats. It does not handle physics, camera controls, or movement - these are the responsibility of the content pack that uses this API.
+RideableAPI provides a simple registry for mounting and unmounting players on entities or seats. 
+It does not handle physics, camera controls, or movement - these are the responsibility of the content pack that uses this API.
 
 If you are new to content pack development or prefer a step-by-step guide, 
 see the [Tutorial](./tutorial.md) first.

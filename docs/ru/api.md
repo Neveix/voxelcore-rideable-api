@@ -122,7 +122,7 @@ API генерирует следующие события через библи
 
 ```lua
 events.on("rideable_api:on_mount", function(pid, entity_uid, seat_id)
-    print("Игрок " .. pid .. " сел на " .. entity_uid)
+    console.chat("Игрок " .. pid .. " сел на " .. entity_uid)
 end)
 ```
 

@@ -27,6 +27,26 @@ RideableAPI предоставляет простой реестр для пос
 local rideable_api = require("rideable_api:mount")
 ```
 
+## Посадка и высадка
+
+### `mount()` — Вызывается контент-паком
+
+Функция `mount()` вызывается **внутри** вашей логики `player_mount()` (или её аналога).
+Она регистрирует игрока как "сидящего" и сохраняет коллбэк `on_unmount`.
+
+```lua
+function my_pack:player_mount(pid)
+    rideable_api.mount(pid, self.uid, nil, function()
+        self:player_unmount()
+    end)
+end
+```
+
+### `unmount()` — Вызывается контент-паком, вызывает коллбэк
+
+Функция `unmount()` вызывается **контент-паком**, когда он решает, что игрок должен слезть.
+Она вызывает сохранённый коллбэк `on_unmount`, который обычно содержит вашу логику `player_unmount()`.
+
 
 ## Справочник API
 

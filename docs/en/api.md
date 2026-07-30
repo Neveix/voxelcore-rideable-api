@@ -27,6 +27,25 @@ To use RideableAPI in your content pack:
 local rideable_api = require("rideable_api:api/v1/mount")
 ```
 
+## Mounting vs Unmounting
+
+### `mount()` — Called by the content pack
+
+The `mount()` function is called **inside** your `player_mount()` logic (or equivalent).  
+It registers the player as mounted and stores the `on_unmount` callback.
+
+```lua
+function my_pack:player_mount(pid)
+    rideable_api.mount(pid, self.uid, nil, function()
+        self:player_unmount()
+    end)
+end
+```
+
+### `unmount()` — Called by the content pack, triggers the callback
+
+The `unmount()` function is called **by the content pack** when it decides the player should dismount.  
+It triggers the stored `on_unmount` callback, which typically contains your `player_unmount()` logic.
 
 ## API Reference
 

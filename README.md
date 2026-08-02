@@ -2,6 +2,8 @@
 
 A content pack for [VoxelCore](https://github.com/MihailRis/voxelcore)
 
+[Русская версия](./docs/ru/README.md)
+
 A lightweight, event-driven API for mounting and unmounting players on entities or seats.  
 Designed for single-player content packs, with planned multiplayer support.
 

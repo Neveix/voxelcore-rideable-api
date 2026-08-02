@@ -5,6 +5,8 @@ A content pack for [VoxelCore](https://github.com/MihailRis/voxelcore)
 A lightweight, event-driven API for mounting and unmounting players on entities or seats.  
 Designed for single-player content packs, with planned multiplayer support.
 
+*Note: README was written with the assistance of AI.*
+
 ---
 
 ## Features
@@ -20,13 +22,16 @@ Designed for single-player content packs, with planned multiplayer support.
 1. Download the content pack.
 2. Place the folder in your `content/` directory.
 
+First and foremost, this solves the problem when there are boats, chairs, vehicles from different mods 
+with different mounting systems — without a unified registry of "seated" players, a smooth transition 
+from a boat to a vehicle or chair is impossible.
+
 ---
 
 ## For Players
 
-This pack adds no visible items or mechanics on its own. It is a **library** that other content packs use to allow players to sit on or ride entities (boats, horses, chairs, etc.).
-
-If a content pack requires RideableAPI, it will tell you. Simply install it and forget about it - other packs will handle the rest.
+This pack adds no visible items or mechanics on its own. 
+It is a **library** that other content packs use to allow players to sit on or ride entities (boats, horses, chairs, etc.).
 
 ---
 

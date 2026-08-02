@@ -35,17 +35,19 @@ The `mount()` function is called **inside** your `player_mount()` logic (or equi
 It registers the player as mounted and stores the `on_unmount` callback.
 
 ```lua
-function my_pack:player_mount(pid)
-    rideable_api.mount(pid, self.uid, nil, function()
-        self:player_unmount()
-    end)
+function on_player_unmount()
+  -- your logic
+end
+
+function player_mount(pid)
+    rideable_api.mount(pid, entity_uid, nil, on_player_unmount)
 end
 ```
 
 ### `unmount()` — Called by the content pack, triggers the callback
 
 The `unmount()` function is called **by the content pack** when it decides the player should dismount.  
-It triggers the stored `on_unmount` callback, which typically contains your `player_unmount()` logic.
+It triggers the stored `on_unmount` callback, which typically contains your `on_player_unmount()` logic.
 
 ## API Reference
 
